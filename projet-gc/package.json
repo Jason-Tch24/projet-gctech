@@ -1,0 +1,17 @@
+{
+  "name": "projet-gc",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm install --prefix back && npm install --prefix front",
+    "dev": "concurrently \"npm run back\" \"npm run front\"",
+    "back": "npm start --prefix back",
+    "front": "npm run dev --prefix front"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
